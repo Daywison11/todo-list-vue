@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #060b1ab6;
+}
+#app{
+    background-color:#202838ab ;
+    margin:auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    width: 500px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+h2{
+    text-shadow: 3px 2px 2px black;
+}
+
+.tarefaa{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #6592a680 ;
+    transition: linear 0.2s;
+    border: 1px solid #6592a680;
+}
+.tarefaa:hover{
+    border-bottom: 1px solid #f2cf63;
+    
+}
+.disabled{
+    color: rgba(255, 247, 247, 0.37);
+    border-left: 2px solid #F2CF63;
+}
+
+.disabled::before{
+    content: "Concluido!";
+    color:#F2CF63;
+    text-decoration: underline;
+    text-decoration-color: #F2CF63;
+}
+
+.texto{
+    width: 100%;
+    cursor: pointer;
+}
+input[type=text], textarea{
+    border: none;
+    padding: 2px;
+    margin:5px;
+    border-radius: 5px;
+}
+
+.check{
+    display: none;
+}
+#add{
+    border: none;
+    padding: 3px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: linear 0.1s;
+}
+#add:hover{
+    background-color: #ffffff80;
+}
+.dell{
+    color:#ff5858 ;
+    background-color: transparent;
+    font-size: 25px;
+    padding: 0px 5px;
+    border:none;
+    cursor: pointer;
+    transition:ease-in-out 0.1s;
+    border: 1px solid transparent;
+}
+
+.dell:hover{
+    border: 1px solid #ff5858;
+}
+.check:checked ~ .tarefa{
+    background-color: red;
+}
+
+#descrition{
+    word-break: break-all;
+    border-radius: 5px;
+}
+.erro{
+    background-color: rgba(255, 0, 0, 0.397);
+}
+
