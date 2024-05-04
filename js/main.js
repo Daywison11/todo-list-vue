@@ -5,7 +5,7 @@ const app = new Vue({
             {title:'Revisar capítulo 5', describe:'Revisar e fazer anotações detalhadas sobre o capítulo 5 do livro para o próximo exame',id:Math.random(), done:false},
             {title:'Pesquisar artigos',describe:'Realizar uma pesquisa abrangente de artigos acadêmicos relacionados ao tema do projeto de pesquisa',id:Math.random(), done:false},
         ],
-        erro:{msg:' [Erro]: não e posivel adicionar uma tarefa vazia',done:false},
+        erro:{msg:'Não e posivel adicionar uma tarefa vazia!',done:false},
 
         title : '',
         descrition:'',
